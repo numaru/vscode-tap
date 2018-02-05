@@ -1,0 +1,49 @@
+{
+    "name": "vscode-tap",
+    "displayName": "Tap",
+    "version": "0.1.0",
+    "publisher": "numaru",
+    "description": "Test Anything Protocol support",
+    "author": {
+        "name": "Kin Numaru"
+    },
+    "categories": [
+        "Languages",
+        "Other"
+    ],
+    "icon": "images/icon.png",
+    "galleryBanner": {
+        "color": "#FFFFFF",
+        "theme": "dark"
+    },
+    "activationEvents": [
+        "onLanguage:tap"
+    ],
+    "engines": {
+        "vscode": "^1.17.0"
+    },
+    "main": "./out/extension",
+    "contributes": {
+        "languages": [{
+            "id": "tap",
+            "aliases": ["Test Anything Protocol", "TAP"],
+            "extensions": [".tap"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "tap",
+            "scopeName": "source.tap",
+            "path": "./syntaxes/tap.tmLanguage.json"
+        }]
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/numaru/vscode-tap/issues",
+        "email": "kin.numaru@laposte.net"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/numaru/vscode-tap.git"
+    },
+    "homepage": "https://github.com/numaru/vscode-tap/blob/master/README.md"
+}

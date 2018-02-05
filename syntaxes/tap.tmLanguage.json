@@ -1,0 +1,28 @@
+{
+    "comment": "Test Anything Protocol Syntax: version 13",
+    "fileTypes": ["tap"],
+    "name": "Tap",
+    "patterns": [{
+        "begin": "^\\s+---$",
+        "end": "^\\s+\\.\\.\\.$",
+        "patterns": [{
+            "include": "source.yaml"
+        }]
+    }, {
+        "match": "#.*$",
+        "name": "comment.line.number-sign.tap"
+    }, {
+        "match": "^TAP version \\d+$",
+        "name": "markup.heading"
+    }, {
+        "match": "^\\d+\\.\\.\\d+$",
+        "name": "storage.modifier"
+    }, {
+        "match": "^((ok|not ok) \\d+)( - ([^#\\n]*))?",
+        "captures": {
+            "1": {"name": "storage.type"},
+            "4": {"name": "string.unquoted"}
+        }
+    }],
+    "scopeName": "source.tap"
+}
