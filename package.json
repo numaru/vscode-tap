@@ -1,7 +1,7 @@
 {
     "name": "vscode-tap",
     "displayName": "Tap",
-    "version": "0.1.0",
+    "version": "1.0.1",
     "publisher": "numaru",
     "description": "Test Anything Protocol support",
     "author": {
