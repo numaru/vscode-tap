@@ -1,10 +1,12 @@
+# TAP for Visual Studio Code
+
+This extension add language support for [Test Anything Protocol](https://testanything.org/) language.
+
 # Functionality
 
-** TODO: Functionality description **
-
-# Install
-
-** TODO: Install description **
+* [x] Syntax highlighting
+* [x] Test suites folding
+* [ ] Logging of test fails in problems console
 
 # Known Issues
 
