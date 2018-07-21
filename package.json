@@ -1,7 +1,7 @@
 {
     "name": "vscode-tap",
     "displayName": "Tap",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "publisher": "numaru",
     "description": "Test Anything Protocol support",
     "author": {
@@ -14,7 +14,7 @@
     "icon": "images/icon.png",
     "galleryBanner": {
         "color": "#FFFFFF",
-        "theme": "dark"
+        "theme": "light"
     },
     "activationEvents": [
         "onLanguage:tap"
@@ -39,7 +39,7 @@
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/numaru/vscode-tap/issues",
-        "email": "kin.numaru@laposte.net"
+        "email": "kin.numaru@protonmail.com"
     },
     "repository": {
         "type": "git",
