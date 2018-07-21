@@ -1,0 +1,5 @@
+1..2
+ok 1 - should be equal
+    1..1
+    ok 1 - should still be equal
+ok 2 - the second thing is actually many things
