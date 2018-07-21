@@ -15,7 +15,7 @@
         "match": "^TAP version \\d+$",
         "name": "markup.heading"
     }, {
-        "match": "^\\d+\\.\\.\\d+$",
+        "match": "^\\s*\\d+\\.\\.\\d+$",
         "name": "storage.modifier"
     }, {
         "match": "^\\s*((ok|not ok) \\d+)( - ([^#\\n]*))?",
