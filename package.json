@@ -14,7 +14,7 @@
     "icon": "images/icon.png",
     "galleryBanner": {
         "color": "#FFFFFF",
-        "theme": "dark"
+        "theme": "light"
     },
     "activationEvents": [
         "onLanguage:tap"
