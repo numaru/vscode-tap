@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.0.2] - 2018-07-21
+
+### Fixed
+
+* Add color to nested test number
+* Change gallery baner theme to light
+
 ## [1.0.1] - 2018-03-31
 
 ### Fixed
@@ -20,5 +27,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 * Syntax highlighting
 * Test suites folding
 
-[Unreleased]: https://github.com/numaru/vscode-tap/compare/v1.0.1...develop
+[Unreleased]: https://github.com/numaru/vscode-tap/compare/v1.0.2...develop
+[1.0.2]: https://github.com/numaru/vscode-tap/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/numaru/vscode-tap/compare/v1.0.0...v1.0.1
