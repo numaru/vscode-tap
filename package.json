@@ -1,49 +1,90 @@
 {
-    "name": "vscode-tap",
-    "displayName": "Tap",
-    "version": "1.0.2",
-    "publisher": "numaru",
-    "description": "Test Anything Protocol support",
-    "author": {
-        "name": "Kin Numaru"
-    },
-    "categories": [
-        "Languages",
-        "Other"
-    ],
-    "icon": "images/icon.png",
-    "galleryBanner": {
-        "color": "#FFFFFF",
-        "theme": "light"
-    },
-    "activationEvents": [
-        "onLanguage:tap"
-    ],
-    "engines": {
-        "vscode": "^1.17.0"
-    },
-    "main": "./out/extension",
-    "contributes": {
-        "languages": [{
-            "id": "tap",
-            "aliases": ["Test Anything Protocol", "TAP"],
-            "extensions": [".tap"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "tap",
-            "scopeName": "source.tap",
-            "path": "./syntaxes/tap.tmLanguage.json"
-        }]
-    },
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/numaru/vscode-tap/issues",
-        "email": "kin.numaru@protonmail.com"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/numaru/vscode-tap.git"
-    },
-    "homepage": "https://github.com/numaru/vscode-tap/blob/master/README.md"
+	"name": "vscode-tap",
+	"displayName": "Tap",
+	"version": "1.0.2",
+	"publisher": "numaru",
+	"description": "Test Anything Protocol support",
+	"author": {
+		"name": "Kin Numaru"
+	},
+	"categories": [
+		"Programming Languages",
+		"Other"
+	],
+	"icon": "images/icon.png",
+	"galleryBanner": {
+		"color": "#FFFFFF",
+		"theme": "light"
+	},
+	"activationEvents": [
+		"onLanguage:tap"
+	],
+	"engines": {
+		"vscode": "^1.25.0"
+	},
+	"main": "./built/client.js",
+	"contributes": {
+		"languages": [
+			{
+				"id": "tap",
+				"aliases": [
+					"Test Anything Protocol",
+					"TAP"
+				],
+				"extensions": [
+					".tap"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "tap",
+				"scopeName": "source.tap",
+				"path": "./syntaxes/tap.tmLanguage.json"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "Example configuration",
+			"properties": {
+				"tap.maxNumberOfProblems": {
+					"scope": "resource",
+					"type": "number",
+					"default": 100,
+					"description": "Controls the maximum number of problems produced by the server."
+				}
+			}
+		}
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/numaru/vscode-tap/issues",
+		"email": "kin.numaru@protonmail.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/numaru/vscode-tap.git"
+	},
+	"homepage": "https://github.com/numaru/vscode-tap/blob/master/README.md",
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"compile": "tsc -p ./tsconfig.json",
+		"watch": "tsc -w -p ./tsconfig.json"
+	},
+	"dependencies": {
+		"tap-parser": "^7.0.0",
+		"vscode": "^1.1.18",
+		"vscode-languageclient": "^4.3.0",
+		"vscode-languageserver": "^4.3.0"
+	},
+	"devDependencies": {
+		"@types/node": "^9.6.23",
+		"typescript": "^2.9.2"
+	},
+	"__metadata": {
+		"id": "1f6bddca-430c-449e-81d1-6fd73a859395",
+		"publisherDisplayName": "numaru",
+		"publisherId": "89207ac2-01e9-4777-b3a7-6eaac13ca170"
+	}
 }
