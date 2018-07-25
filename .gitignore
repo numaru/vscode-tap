@@ -52,6 +52,7 @@ internal/
 .settings
 **/.vs
 **/.vscode
+!.vscode
 !**/.vscode/tasks.json
 !tests/cases/projects/projectOption/**/node_modules
 !tests/cases/projects/NodeModulesSearch/**/*
